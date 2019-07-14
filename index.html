@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/video-presentation.js"></script>
     <title>Waxom homepage</title>
 </head>
 
 <body>
     <div class="content">
-       <header>
+        <header>
           <div class="header">
              <a href="index.html" class="logo">
                 <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56" viewBox="0 0 64 56">
@@ -53,8 +55,8 @@
              <a href="#"></a>
              <a href="#"></a>
           </div>
-       </header>
-       <section class="services">
+        </header>
+        <section class="services">
           <a href="#" class="services-link">
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.594" height="47.59" viewBox="0 0 47.594 47.59">
                 <path id="icon-webappdesign" class="cls-1" d="M534.668,1121.47a1.591,1.591,0,0,0-2.248,0l-13.847,13.84-19.467,8.58-3-3,8.576-19.47,13.844-13.84a1.59,1.59,0,0,0-2.248-2.25l-14.268,14.26-14.477,32.87,32.868-14.47,14.266-14.27A1.592,1.592,0,0,0,534.668,1121.47Zm-20.173,11a1.606,1.606,0,0,0,2.25,0l13.332-13.34a1.591,1.591,0,0,0-2.25-2.25L514.5,1130.22A1.593,1.593,0,0,0,514.5,1132.47Zm-3.48-3.48a1.606,1.606,0,0,0,2.25,0l13.333-13.34a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.6,1.6,0,0,0,511.015,1128.99Zm-3.481-3.49a1.581,1.581,0,0,0,2.25,0l13.333-13.33a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.593,1.593,0,0,0,507.534,1125.5Z" transform="translate(-487.531 -1104.88)"/>
@@ -83,19 +85,96 @@
              <span>Marketing</span>
              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
           </a>
-       </section>
-       <section class="waxom-ideas">
+        </section>
+        <section class="waxom-ideas">
           <span class="waxom-ideas-title">Waxom is Realization of your Ideas.</span>
           <p class="waxom-ideas-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
           <div class="waxom-ideas-bckg"></div>
-       </section>
-       <aside class="text-boxes">
+        </section>
+        <aside class="text-boxes">
           <div class="text-block">
              <h2 class="text-boxes-title"><span class="text-boxes-title-first-word">Waxom</span> Multipurpose WordPress Theme</h2>
              <p class="text-boxes-text">Don't Forget to Rate the Template. Thanks so much!</p>
           </div>
           <button class="btn-purchase-now">Purchase Now</button>
-       </aside>
+        </aside>
+        <section class="latest-projects">
+           <span class="lp-title">Our Latest Projects.</span>
+           <p class="lp-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+           <div class="lp-menu">
+              <button class="lp-menu-btn">All</button>
+              <button class="lp-menu-btn">Web design</button>
+              <button class="lp-menu-btn">Mobile app</button>
+              <button class="lp-menu-btn">Illustration</button>
+              <button class="lp-menu-btn">Photography</button>
+           </div>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-1.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Claritas Etiam Processus</span>
+                 <span class="lp-article-txt">Photography, Nature</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-2.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Quam Nutamus Farum</span>
+                 <span class="lp-article-txt">Graphic Design, Mock-Up</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-3.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Usus Legentis Videntur</span>
+                 <span class="lp-article-txt">Photography, Holiday</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-4.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Claritas Etiam Processus</span>
+                 <span class="lp-article-txt">Photography, Nature</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-5.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Quam Nutamus Farum</span>
+                 <span class="lp-article-txt">Graphic Design, Mock-Up</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <article class="lp-article">
+              <img class="lp-article-photo" src="img/claritas-etiam-processus-3.jpg" alt="ClaritasEtiamProcessus" width="370" height="237">
+              <div class="lp-article-txt-wrapper">
+                 <span class="lp-article-title">Usus Legentis Videntur</span>
+                 <span class="lp-article-txt">Photography, Holiday</span>
+              </div>
+              <button class="lp-article-btn-link"></button>
+              <button class="lp-article-btn-search"></button>
+           </article>
+           <button class="lp-button">Load More</button>
+        </section>
+        <section class="video-presentaion">
+           <video src="video/philippines-village.mp4" class="vp-video" poster="img/video-presentation-photo.png" width="1920" height="705">
+              <p>Your browser doesn't support HTML5 video. Here is a <a href="video/philippines-village.mp4"> link to the video</a> instead.</p>
+           </video>
+           <div class="vp-desc">
+              <button class="vp-btn-play" id="btn-play"></button>
+              <span class="vp-title">Waxom Video Presentation</span>
+              <p class="vp-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+              <time class="vp-time">03:26</time>
+           </div>
+        </section>
     </div>
 </body>
 
