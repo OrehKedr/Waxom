@@ -40,8 +40,8 @@ header {
   position: relative;
   height: 1024px;
   background-image: url(../img/header-photo.jpg);
+  background-clip: border-box;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid black;
 }
@@ -855,20 +855,16 @@ ul li a:active {
   font-weight: 300;
   line-height: 20px;
   text-align: left;
-  color: #c7b299;
+  color: #c8b39a;
 }
 .rp-article-link:after {
   content: "";
-  width: 8px;
-  height: 8px;
   display: block;
   position: absolute;
   top: 6px;
-  left: 118px;
-  background-color: transparent;
-  background-image: url(../img/read-more-arrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  left: 119px;
+  border: 4px solid transparent;
+  border-left: 6px solid #c8b39a;
 }
 .rp-article:hover:after {
   background-color: #a48d72;
@@ -887,6 +883,10 @@ ul li a:active {
 }
 .rp-article:hover .rp-article-txt {
   color: #ffffff;
+}
+.rp-article-link:hover,
+.rp-article-link:after {
+  filter: sepia(60%);
 }
 .rp-buttons {
   width: 100%;
@@ -920,4 +920,79 @@ ul li a:active {
 }
 .rp-button-right:hover {
   background-image: url(../img/recent-posts-arrow-right-active.svg);
+}
+.parthners {
+  height: 490px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 405px;
+  box-sizing: border-box;
+  background-image: url(../img/parthners-photo.jpg);
+  background-clip: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parthners-link {
+  display: block;
+  text-decoration: none;
+}
+.parthners-link:hover .pl-img {
+  -webkit-filter: drop-shadow(0 0 20px #a48d72);
+  filter: drop-shadow(0 0 20px #a48d72);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+footer {
+  min-height: 508px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+  padding: 80px 375px;
+  box-sizing: border-box;
+}
+.fa-about-waxom {
+  max-width: 260px;
+}
+.fa-about-waxom .logo {
+  margin-bottom: 30px;
+}
+.fa-text:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fa-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #555555;
+  margin: 0 0 33px 0;
+}
+.fa-article-link {
+  display: block;
+  position: relative;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #d1d1d1;
+}
+.fa-article-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 88px;
+  border: 4px solid transparent;
+  border-left: 6px solid #d1d1d1;
+}
+.fa-article-link:hover,
+.fa-article-link:after {
+  filter: sepia(60%);
 }
