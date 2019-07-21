@@ -85,20 +85,22 @@ header {
 .logo:active .logo-txt {
   color: #ad9a89;
 }
-.menu {
+.header-menu {
   float: left;
   width: 637px;
   margin-left: 218px;
   padding-top: 22px;
 }
-ul {
+.header-menu ul,
+.fc-menu-left,
+.fc-menu-right {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-ul li a {
+.header-menu ul li a {
   display: block;
   color: white;
   font-size: 14px;
@@ -106,24 +108,22 @@ ul li a {
   text-align: center;
   text-decoration: none;
 }
-ul li a:hover {
+.header-menu ul li a:hover {
   color: #c7b299;
 }
-ul li a:active {
+.header-menu ul li a:active {
   color: #dbc6ad;
 }
 .cart-and-search {
-  float: right;
   width: 70px;
   height: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-top: 16px;
   margin: 0;
+  float: right;
 }
 .cart {
-  display: block;
   width: 24px;
   height: 24px;
   background-size: contain;
@@ -134,7 +134,6 @@ ul li a:active {
   background-image: url(../img/icon-cart.png);
 }
 .search {
-  display: block;
   width: 24px;
   height: 24px;
   background-size: contain;
@@ -143,6 +142,12 @@ ul li a:active {
   border: none;
   outline: none;
   background-image: url(../img/icon-search.png);
+}
+.cart:hover,
+.search:hover {
+  cursor: pointer;
+  box-shadow: 0 15px 20px rgba(153, 134, 117, 0.4);
+  transition: .3s;
 }
 .slider {
   padding: 285px 150px 0;
@@ -935,17 +940,15 @@ ul li a:active {
 .parthners-link:hover .pl-img {
   -webkit-filter: drop-shadow(0 0 20px #a48d72);
   filter: drop-shadow(0 0 20px #a48d72);
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-footer {
-  min-height: 508px;
-  background-color: #191919;
-  padding: 80px 375px;
-  box-sizing: border-box;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 0.7);
 }
 .footer-articles {
+  min-height: 508px;
   display: flex;
   justify-content: space-between;
+  padding: 80px 375px;
+  box-sizing: border-box;
+  background-color: #191919;
 }
 .fa-about-waxom {
   max-width: 260px;
@@ -1064,12 +1067,14 @@ footer {
 }
 .fa-tw-link p span {
   font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   color: #00bff3;
 }
 .fa-tw-link .span-link {
   font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   color: #959595;
@@ -1085,4 +1090,54 @@ footer {
 }
 .fa-dw-link:hover {
   filter: brightness(110%);
+}
+.footer-copyright {
+  height: 111px;
+  background-color: #111111;
+  padding: 45px 375px 52px;
+  box-sizing: border-box;
+}
+.fc-menu-left {
+  width: 401px;
+  float: left;
+}
+.fc-menu-right {
+  width: 322px;
+  float: right;
+}
+.fc-menu-left li a,
+.fc-menu-right li a {
+  height: 14px;
+  line-height: 14px;
+  display: block;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-right: 1px solid #363636;
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  color: #555555;
+  text-decoration: none;
+}
+.fc-menu-left > li:nth-child(1) > a,
+.fc-menu-right > li:nth-child(1) > a {
+  padding-left: 0;
+}
+.fc-menu-left > li:nth-child(4) > a,
+.fc-menu-right > li:nth-child(2) > a {
+  padding-right: 0;
+  border-right: none;
+}
+.fc-menu-left li a:hover,
+.fc-menu-right li a:hover {
+  color: #c7b299;
+}
+.fc-menu-left li a:active,
+.fc-menu-right li a:active {
+  color: #dbc6ad;
+}
+.fc-menu-left span,
+.fc-menu-right span {
+  color: #959595;
 }
