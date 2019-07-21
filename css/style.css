@@ -40,7 +40,6 @@ header {
   position: relative;
   height: 1024px;
   background-image: url(../img/header-photo.jpg);
-  background-clip: border-box;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid black;
@@ -127,7 +126,6 @@ ul li a:active {
   display: block;
   width: 24px;
   height: 24px;
-  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -139,7 +137,6 @@ ul li a:active {
   display: block;
   width: 24px;
   height: 24px;
-  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -294,12 +291,12 @@ ul li a:active {
   display: block;
   width: 100%;
   margin: 29px 0 0 0;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-weight: 600;
 }
 .services-link p {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -333,7 +330,7 @@ ul li a:active {
 }
 .waxom-ideas-title {
   display: block;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 600;
   color: #555555;
@@ -342,7 +339,7 @@ ul li a:active {
 .waxom-ideas-text {
   display: block;
   width: 757px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -366,7 +363,7 @@ ul li a:active {
 }
 .text-boxes-title {
   margin: 0;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 28px;
   text-align: left;
   color: #ffffff;
@@ -376,7 +373,7 @@ ul li a:active {
 }
 .text-boxes-text {
   margin: 8px 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
@@ -417,7 +414,7 @@ ul li a:active {
   width: 100%;
   display: block;
   margin-bottom: 24px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
@@ -429,7 +426,7 @@ ul li a:active {
   padding: 0 207px;
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -444,7 +441,7 @@ ul li a:active {
 .lp-menu-btn {
   height: 32px;
   margin-right: 10px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 32px;
   font-weight: 300;
@@ -491,7 +488,7 @@ ul li a:active {
   display: block;
   padding: 30px 0 14px 28px;
   box-sizing: border-box;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
@@ -502,7 +499,7 @@ ul li a:active {
   display: block;
   padding: 0 0 28px 28px;
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -516,10 +513,9 @@ ul li a:active {
   display: none;
   position: absolute;
   top: 30%;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   background-color: transparent;
   outline: none;
   border: none;
@@ -590,7 +586,7 @@ ul li a:active {
 .vp-title {
   display: block;
   margin-bottom: 30px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 500;
   text-align: center;
@@ -599,7 +595,7 @@ ul li a:active {
 .vp-text {
   max-width: 552px;
   margin-bottom: 40px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -608,7 +604,7 @@ ul li a:active {
 }
 .vp-time {
   display: block;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -640,7 +636,7 @@ ul li a:active {
 .excellent-for-md-content > span {
   display: block;
   margin-top: 116px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-align: left;
@@ -649,7 +645,7 @@ ul li a:active {
 .excellent-for-md-content > p {
   display: block;
   margin: 40px 0 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -667,7 +663,7 @@ ul li a:active {
   display: block;
   position: relative;
   padding: 0 0 0 50px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -675,7 +671,7 @@ ul li a:active {
   color: #8c8c8c;
 }
 .excellent-for-md-list-item p {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -721,7 +717,7 @@ ul li a:active {
   display: block;
   width: 100%;
   margin: 30px 0 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 48px;
   font-weight: 200;
   line-height: 36px;
@@ -730,7 +726,7 @@ ul li a:active {
 }
 .counters-item p {
   margin: 21px 0 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -757,7 +753,7 @@ ul li a:active {
   width: 100%;
   display: block;
   margin-bottom: 24px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
@@ -769,7 +765,7 @@ ul li a:active {
   padding: 0 207px;
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -791,7 +787,7 @@ ul li a:active {
   top: 20px;
   left: 20px;
   background-color: #363636;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 35px;
@@ -826,7 +822,7 @@ ul li a:active {
   display: block;
   padding: 30px 0 20px 30px;
   box-sizing: border-box;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-align: left;
@@ -837,7 +833,7 @@ ul li a:active {
   margin: 0;
   padding: 0 0 28px 30px;
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -850,7 +846,7 @@ ul li a:active {
   padding: 0 0 30px 33px;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -922,14 +918,13 @@ ul li a:active {
   background-image: url(../img/recent-posts-arrow-right-active.svg);
 }
 .parthners {
-  height: 490px;
+  height: 489px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 140px 405px;
   box-sizing: border-box;
   background-image: url(../img/parthners-photo.jpg);
-  background-clip: border-box;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -944,11 +939,13 @@ ul li a:active {
 }
 footer {
   min-height: 508px;
-  display: flex;
-  justify-content: space-between;
   background-color: #191919;
   padding: 80px 375px;
   box-sizing: border-box;
+}
+.footer-articles {
+  display: flex;
+  justify-content: space-between;
 }
 .fa-about-waxom {
   max-width: 260px;
@@ -962,7 +959,7 @@ footer {
   clear: both;
 }
 .fa-text {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -970,13 +967,16 @@ footer {
   color: #555555;
   margin: 0 0 33px 0;
 }
+.fa-text:hover {
+  color: #c7b299;
+}
 .fa-article-link {
   display: block;
   position: relative;
   padding: 0 0 0 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -995,4 +995,94 @@ footer {
 .fa-article-link:hover,
 .fa-article-link:after {
   filter: sepia(60%);
+}
+.fa-recents-posts {
+  width: 262px;
+  text-align: left;
+}
+.fa-rp-title,
+.fa-tw-title,
+.fa-dw-title {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 28px 0 33px 0;
+}
+.fa-rp-link,
+.fa-tw-link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #363636;
+  box-sizing: border-box;
+}
+.fa-rp-link > span,
+.fa-tw-link > span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #363636;
+}
+.fa-rp-link > p,
+.fa-tw-link > p {
+  display: block;
+  margin: 0 0 21px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #555555;
+  word-break: break-word;
+}
+.fa-rp-link:hover p {
+  color: #c7b299;
+}
+.fa-rp-link:hover > span {
+  color: #ffffff;
+}
+.fa-recents-posts > a:nth-child(4),
+.fa-our-twitter > a:nth-child(4) {
+  border: none;
+}
+.fa-our-twitter {
+  width: 267px;
+  text-align: left;
+}
+.fa-tw-link:hover p {
+  color: #c7b299;
+}
+.fa-tw-link:hover > span {
+  color: #ffffff;
+}
+.fa-tw-link p span {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00bff3;
+}
+.fa-tw-link .span-link {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #959595;
+}
+.fa-dribbble-widget {
+  width: 284px;
+  text-align: left;
+}
+.fa-dw-link {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+}
+.fa-dw-link:hover {
+  filter: brightness(110%);
 }
