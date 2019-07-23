@@ -78,6 +78,11 @@
   src: url(../fonts/raleway/raleway-extrabold.ttf);
 }
 
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/roboto/roboto-regular.ttf);
+}
+
 body{
     margin: 0;
 }
@@ -193,18 +198,20 @@ header{
 }
 
 .cart-and-search-buttons(){
-    width: 24px;
+    width: 23px;
     height: 24px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
-    border: none;
+    border: transparent;
+    border-radius: 4px;
     outline: none;
 }
 
-.cart{    
+.cart{
     .cart-and-search-buttons;
-    background-image: url(../img/icon-cart.png);    
+    background-image: url(../img/icon-cart.png);
+    flex-shrink: 0;
 }
 
 .search{
@@ -219,12 +226,13 @@ header{
     transition: .3s;
 }
 
-//.search:focus {
-//    width: 300px;
-//    transition: width 1s ease-out;
-//    background-position: right;
-//    color: #ffffff;
-//}
+.search:focus {
+    width: 219px;
+    padding-right: 25px;
+    transition: width 1s ease-out;
+    background-position: right;
+    color: #ffffff;
+}
 
 .slider{
     padding: @slider-padding-top @slider-padding-lr 0;
@@ -960,7 +968,7 @@ header{
     top: 55px;
     left: 20px;
     background-color: #252525;
-    font-family: Roboto;
+    font-family: 'Roboto-Regular', sans-serif;
     font-size: 12px;
     line-height: 25px;
     text-align: center;
