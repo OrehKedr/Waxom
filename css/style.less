@@ -720,8 +720,6 @@ header{
     
     video{
         width: 100%;
-        height: auto;
-        max-height: 100%;
     }
 }
 
@@ -813,7 +811,7 @@ header{
     visibility: hidden;
 }
 
-.excellent-for-md-content > span{
+.excellent-for-md-content span{
     display: block;
     margin-top: 116px;
     font-family: 'Raleway', sans-serif;;
@@ -823,7 +821,7 @@ header{
     color: #555555;
 }
 
-.excellent-for-md-content > p{
+.excellent-for-md-content p{
     display: block;
     margin: 40px 0 0 0;
     font-family: 'Montserrat', sans-serif;
@@ -1430,7 +1428,7 @@ header{
         &:before{
             top: -15px;
         }
-    }
+    } //.header-menu-icon
     
     .header-menu{
         width: 100%;
@@ -1510,7 +1508,7 @@ header{
     }
     
     .latest-projects{
-        padding: 15px 15px;
+        padding: 15px 15px 30px;
     }
     
     .lp-title {
@@ -1550,6 +1548,7 @@ header{
 
     .video-presentaion{ 
         video{
+            height: auto;
             -o-object-fit: fill;
             object-fit: fill;
         }
@@ -1569,10 +1568,10 @@ header{
             margin: 0 28px 15px;
             font-size: 14px;
         }
-    }
+    } //.video-presentaion
     
     .excellent-for-md{
-        padding: 15px 15px;
+        padding: 15px 15px 0;
         
         img{
             display: none;
@@ -1580,13 +1579,13 @@ header{
         
         &-content{
             span{
-                margin-top: 25px;
+                margin: 25px 0 20px;
                 font-size: 24px;
                 text-align: center;
             }
             
             p {
-                margin: 20px 5px 0;
+                margin: 0 5px 0;
                 font-size: 16px;
                 line-height: 26px;
                 text-align: justify;
@@ -1624,10 +1623,52 @@ header{
         }
     } //.excellent-for-md
     
-    .counters, 
-    .recent-posts, 
-    .parthners,
-    footer{
+    .recent-posts{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+        .rp-title {
+            margin: 25px 0 20px;
+            font-size: 24px;
+        }
+        
+        .rp-text {
+            margin-bottom: 20px;
+            padding: 0;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        
+        .rp-article {
+            margin-bottom: 15px;
+        }
+        
+        .rp-buttons {
+            display: none;
+        }
+        
+    } //.recent-posts
+    
+    .parthners{
+        padding: 15px;
+        height: 190px;
+        
+        &-link img{
+            width: 120px;
+        }
+    }
+    
+    .footer-copyright{
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    
+    .counters,
+    .footer-articles{
         display: none;
     }
 

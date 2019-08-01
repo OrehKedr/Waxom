@@ -589,8 +589,6 @@ header {
 }
 .video-presentaion video {
   width: 100%;
-  height: auto;
-  max-height: 100%;
 }
 .vp-desc {
   width: 552px;
@@ -669,7 +667,7 @@ header {
   clear: both;
   visibility: hidden;
 }
-.excellent-for-md-content > span {
+.excellent-for-md-content span {
   display: block;
   margin-top: 116px;
   font-family: 'Raleway', sans-serif;
@@ -678,7 +676,7 @@ header {
   text-align: left;
   color: #555555;
 }
-.excellent-for-md-content > p {
+.excellent-for-md-content p {
   display: block;
   margin: 40px 0 0 0;
   font-family: 'Montserrat', sans-serif;
@@ -1297,7 +1295,7 @@ header {
     display: none;
   }
   .latest-projects {
-    padding: 15px 15px;
+    padding: 15px 15px 30px;
   }
   .lp-title {
     margin-bottom: 10px;
@@ -1328,6 +1326,7 @@ header {
     line-height: 16px;
   }
   .video-presentaion video {
+    height: auto;
     -o-object-fit: fill;
     object-fit: fill;
   }
@@ -1345,18 +1344,18 @@ header {
     font-size: 14px;
   }
   .excellent-for-md {
-    padding: 15px 15px;
+    padding: 15px 15px 0;
   }
   .excellent-for-md img {
     display: none;
   }
   .excellent-for-md-content span {
-    margin-top: 25px;
+    margin: 25px 0 20px;
     font-size: 24px;
     text-align: center;
   }
   .excellent-for-md-content p {
-    margin: 20px 5px 0;
+    margin: 0 5px 0;
     font-size: 16px;
     line-height: 26px;
     text-align: justify;
@@ -1386,10 +1385,43 @@ header {
     margin: 10px 0 0;
     padding-right: 5px;
   }
+  .recent-posts {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .recent-posts .rp-title {
+    margin: 25px 0 20px;
+    font-size: 24px;
+  }
+  .recent-posts .rp-text {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .recent-posts .rp-article {
+    margin-bottom: 15px;
+  }
+  .recent-posts .rp-buttons {
+    display: none;
+  }
+  .parthners {
+    padding: 15px;
+    height: 190px;
+  }
+  .parthners-link img {
+    width: 120px;
+  }
+  .footer-copyright {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+  }
   .counters,
-  .recent-posts,
-  .parthners,
-  footer {
+  .footer-articles {
     display: none;
   }
 }
